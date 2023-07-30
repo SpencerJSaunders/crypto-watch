@@ -26,7 +26,7 @@ const CryptoMarketTable = ({ marketInfo, searchTerm }) => {
   return (
     <div className="crypto-market-table">
       <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} aria-label="Crypto market table">
+        <Table aria-label="Crypto market table">
           <TableHead>
             <TableRow>
               <TableCell>Coin</TableCell>
@@ -38,8 +38,6 @@ const CryptoMarketTable = ({ marketInfo, searchTerm }) => {
           <TableBody>
             {marketInfo &&
               marketInfo.map((coin) => {
-                // console.log(coin.name);
-                // console.log(coin.id);
                 if (coin.name.toLowerCase().includes(searchTerm.toLowerCase())) {
                   return (
                     <TableRow
