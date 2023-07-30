@@ -1,0 +1,74 @@
+@import "./mixins.scss";
+
+* {
+  margin: 0;
+}
+
+
+.coin-gecko-logo {
+  &__container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+}
+
+.crypto-market-table {
+
+  margin-bottom: 5rem;
+
+  &__coin-logo {
+    display: flex;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: black;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    img {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.coin-info {
+  &__name-container {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 1rem;
+    }
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    margin-bottom: 2rem;
+  }
+
+  &__grid-item {
+    
+    p:first-child {
+      margin-bottom: .5rem;
+      font-weight: bold;
+    }
+    
+    padding: 2rem;
+    text-align: center;
+    color: black;
+    border: 1px lightgray solid;
+    border-radius: 8px;
+    -webkit-box-shadow: 10px -1px 74px -48px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px -1px 74px -48px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px -1px 74px -48px rgba(0, 0, 0, 0.75);
+  }
+}
