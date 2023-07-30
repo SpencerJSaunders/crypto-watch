@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { fetchMarketInfo } from "@/clients/CoinGeckoClient";
 import CryptoMarketTable from "@/src/components/CryptoMarketTable";
+import SearchBar from "@/src/components/CoinTableSearchBar";
 import { Button } from "@mui/material";
 
 const CryptoMarketWatch = (props) => {
@@ -20,6 +21,9 @@ const CryptoMarketWatch = (props) => {
     }
   };
 
+  console.log(searchBarValue);
+
+
   return (
     <main>
       <h1 style={{ marginBottom: "1rem" }}>Crypto Market Watch</h1>
@@ -27,6 +31,7 @@ const CryptoMarketWatch = (props) => {
         To view more details for a specific coin, click on the name of a
         specific coin.
       </p>
+      <SearchBar searchBarValue={searchBarValue} setSearchBarValue={setSearchBarValue}/>
       <CryptoMarketTable
         marketInfo={coinMarketInfo}
         searchTerm={searchBarValue}

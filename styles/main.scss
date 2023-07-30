@@ -4,7 +4,6 @@
   margin: 0;
 }
 
-
 .coin-gecko-logo {
   &__container {
     display: flex;
@@ -18,14 +17,11 @@
   }
 }
 
-
 .load-more-coins-button {
   margin-bottom: 5rem;
 }
 
-
 .crypto-market-table {
-
   margin-bottom: 3rem;
 
   &__coin-logo {
@@ -62,19 +58,16 @@
   }
 
   &__grid-item {
-    
     p:first-child {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       font-weight: bold;
     }
-    
+
     padding: 2rem;
     text-align: center;
     color: black;
     border: 1px lightgray solid;
     border-radius: 8px;
-    -webkit-box-shadow: 10px -1px 74px -48px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px -1px 74px -48px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px -1px 74px -48px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   }
 }

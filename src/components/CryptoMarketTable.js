@@ -38,7 +38,9 @@ const CryptoMarketTable = ({ marketInfo, searchTerm }) => {
           <TableBody>
             {marketInfo &&
               marketInfo.map((coin) => {
-                if (coin.name.includes(searchTerm.toLowerCase())) {
+                // console.log(coin.name);
+                // console.log(coin.id);
+                if (coin.name.toLowerCase().includes(searchTerm.toLowerCase())) {
                   return (
                     <TableRow
                       key={coin.id}
