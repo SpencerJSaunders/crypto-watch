@@ -7,7 +7,7 @@ import CoinChart from "@/src/components/CoinChart";
 const CoinInfo = (props) => {
   const { coinInfo } = props;
   return (
-    <main>
+    <main className="coin-info">
       <div className="coin-info__name-container">
         <Image
           src={coinInfo.image.small}
