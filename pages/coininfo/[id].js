@@ -2,6 +2,7 @@ import Image from "next/image";
 import { fetchCoinInfo } from "@/clients/CoinGeckoClient";
 import Grid from "@mui/material/Unstable_Grid2";
 import parse from "html-react-parser";
+import CoinChart from "@/src/components/CoinChart";
 
 const CoinInfo = (props) => {
   const { coinInfo } = props;
@@ -15,6 +16,9 @@ const CoinInfo = (props) => {
           alt={`${coinInfo.name} logo`}
         />
         <h1>{coinInfo.name}</h1>
+      </div>
+      <div className='coin-info__chart-container'>
+        <CoinChart coinInfo={coinInfo} />
       </div>
       <div className="coin-info__description">
         <p>{parse(coinInfo.description.en)}</p>
