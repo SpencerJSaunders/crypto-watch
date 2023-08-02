@@ -27,6 +27,7 @@
   &__coin-logo {
     display: flex;
     align-items: center;
+    column-gap: .6rem;
 
     a {
       text-decoration: none;
@@ -34,10 +35,6 @@
       &:hover {
         cursor: pointer;
       }
-    }
-
-    img {
-      margin-right: 0.5rem;
     }
   }
 }
@@ -49,10 +46,7 @@
   &__name-container {
     display: flex;
     align-items: center;
-
-    img {
-      margin-right: 1rem;
-    }
+    column-gap: 1rem;
     margin-bottom: 2rem;
   }
 
